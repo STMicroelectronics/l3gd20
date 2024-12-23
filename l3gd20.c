@@ -374,7 +374,7 @@ void L3GD20_ReadXYZAngRate(float *pfData)
   /* Divide by sensitivity */
   for(i=0; i<3; i++)
   {
-    pfData[i]=(float)(RawData[i] * sensitivity);
+    pfData[i]=(float)(RawData[i] / sensitivity);
   }
 }
 
